@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  nginx-contoh:
+    container_name: nginx-contoh
+    image: nginx:latest
+    ports:
+      - 699:80
+    volumes:
+      - type: bind
+        source: C:\Users\Kamal\Desktop\projects\mine\about-me
+        target: /usr/share/nginx/html
+    command: command
+
+
+
+# create command:
+# docker compose create
+
+# run command:
+# docker compose start
+
+# cerate + run command:
+# docker compose up
+# docker compose up -d (background process)
+
+# stop command:
+# docker compose stop
+
+# remove command:
+# docker compose down
+
+# show container command:
+# docker compose ps
+# docker compose ps -a
